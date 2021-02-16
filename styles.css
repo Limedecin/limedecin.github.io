@@ -1,0 +1,194 @@
+/* Define Colors */
+
+:root {
+  --head-color: #16697a;
+  --button-color: #FFA62B;
+  --button-dark-color: #db6400;
+  --background-color: #f8f1f1;
+}
+
+/* Style Header and Footer */
+
+nav {
+  background-color: var(--head-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+nav>a {
+    border: 0px solid red;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+}
+nav>a:hover {
+    color: white;
+}
+
+footer {
+    background-color: var(--head-color);
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+body {
+    border: 6px solid white;
+}
+
+.allButFooter {
+    border: 1px dashed white;
+    min-height: calc(100vh - 60px);
+}
+
+/* Style Index homepage */
+
+.homepage {
+        margin: 2em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+#aboutMySelf {
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+}
+
+#aboutMySelf>p {
+    border: 0px solid red;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .homepage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homepage > .photo {
+        margin-bottom: 1em;
+    }
+}
+
+.homepage>.photo {
+    border: 0px solid var(--background-color);
+    border-radius: 4px;
+    max-width: 40vw;
+    max-height: 40vh;
+}
+
+/* Style Publications */
+
+.paper {
+    margin: 2em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.paper>.text {
+padding-left: 2em;
+display: flex;
+flex-direction: column;
+max-width: 50vw;
+}
+
+.paper>.photo {
+    border-radius: 4px;
+    max-width: 40vw;
+    max-height: 40vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .homepage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homepage > .photo {
+        margin-bottom: 1em;
+    }
+}
+
+/* Style Index Contact Icons */
+
+.fab, .fas {
+    color: var(--button-color);
+    margin: 7px auto;
+}
+
+.fab:hover, .fas:hover {
+    color: var(--button-dark-color);
+}
+
+/* Style Hobbies */
+
+.box {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: 1em auto;
+}
+
+figure>.photo {
+    border-radius: 4px;
+    width: auto;
+    height: 40vh;
+}
+
+@media only screen and (max-width: 768px) {
+    figure>.photo {
+        border-radius: 4px;
+        width: 70vw;
+        height: auto;
+    }
+}
+
+/* Style Contact Form */
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 0px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 0px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  display: block;
+}
+
+form {
+    border-radius: 4px;
+    width: 65%;
+    margin: 1em auto;
+    padding: 2em;
+    background-color: var(--background-color);
+}
+
+/* Style the submit button with a specific background color */
+input[type=submit] {
+  background-color: var(--button-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: var(--button-dark-color);
+}
