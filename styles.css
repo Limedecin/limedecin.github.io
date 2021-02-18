@@ -78,7 +78,8 @@ body {
         margin-bottom: 1em;
     }
     #aboutMySelf {
-    max-width: 80vw;
+        padding-left: 0em;
+        max-width: 80vw;
     }
 }
 
@@ -110,17 +111,6 @@ max-width: 50vw;
     border-radius: 4px;
     max-width: 40vw;
     max-height: 40vh;
-}
-
-@media only screen and (max-width: 768px) {
-    .homepage{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .homepage > .photo {
-        margin-bottom: 1em;
-    }
 }
 
 /* Style Index Contact Icons */
@@ -157,41 +147,4 @@ figure>.photo {
         width: 70vw;
         height: auto;
     }
-}
-
-/* Style Contact Form */
-
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 0px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 0px; /* Add a top margin */
-  margin-bottom: 10px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  display: block;
-}
-
-form {
-    border-radius: 4px;
-    width: 65%;
-    margin: 1em auto;
-    padding: 2em;
-    background-color: var(--background-color);
-}
-
-/* Style the submit button with a specific background color */
-input[type=submit] {
-  background-color: var(--button-color);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: var(--button-dark-color);
 }
