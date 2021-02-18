@@ -121,6 +121,7 @@ max-width: 50vw;
     }
   
     .paper>.text {
+        padding-left: 0em;
         padding-top: 1em;
         max-width: 80vw;
   }
